@@ -8,27 +8,31 @@ const Agency = () => {
     return (
         <div>
             <Header />
-            <div className='cardContainer'>
-                {characters.map((character) => {
-                    return (
-                        <div key={character.id} image={character.image} name={character.name} age={character.age}
-                            sign={character.sign}
-                            beliefs={character.beliefs}
-                            degree={character.degree}
-                            speciality={character.speciality}>
-                            <div className='card'>
-                                <div className='photoPortrait'><img src={character.image} alt="Agent Portrait" /></div>
-                                <h3>{character.name}</h3>
-                                <div className='cardContent'>
-                                    <p><span>Âge : </span>{character.age} ans</p>
-                                    <p><span>Signe particulier : </span>{character.sign}</p>
-                                    <p><span>Diplôme : </span>{character.degree}</p>
-                                    <p><span>Spécialité : </span>{character.speciality}</p>
+            <div className='agencyContainer'>
+                <h1>Notre Agence</h1>
+                <div className='cardContainer'>
+                    {characters.map((character) => {
+                        return (
+                            <div key={character.id} image={character.image} name={character.name} age={character.age}
+                                sign={character.sign}
+                                beliefs={character.beliefs}
+                                degree={character.degree}
+                                speciality={character.speciality}>
+                                <div className='card'>
+                                    <div className='photoPortrait'><img src={character.image} alt="Agent Portrait" /></div>
+                                    <h3>{character.name}</h3>
+                                    <div className='cardContent'>
+                                        <p><span>Âge : </span>{character.age} ans</p>
+                                        <p><span>Signe particulier : </span>{character.sign}</p>
+                                        <p><span>Croyance : </span>{character.beliefs}</p>
+                                        <p><span>Diplôme : </span>{character.degree}</p>
+                                        <p><span>Spécialité : </span>{character.speciality}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                })}
+                        )
+                    })}
+                </div>
             </div>
             <Footer />
 

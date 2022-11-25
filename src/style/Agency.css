@@ -1,3 +1,11 @@
+.agencyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0rem;
+}
+
 .cardContainer {
     display: flex;
     flex-direction: row;
@@ -12,7 +20,7 @@
 .card {
     background-color: white;
     padding: 1rem;
-    width: 400px;
+    width: 450px;
     height: 650px;
     gap: 2rem;
     display: flex;
@@ -29,8 +37,8 @@
 }
 
 .photoPortrait {
-    width: 18rem;
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -41,5 +49,5 @@
 
 .photoPortrait img {
     width: auto;
-    height: 105%;
+    height: 110%;
 }
