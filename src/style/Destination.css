@@ -2,12 +2,29 @@ body {
     background-color: var(--background-color);
 }
 
+.titleDestination {
+    margin-top: 50px;
+}
+
+.destinationForTravel {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+}
 
 .destinationForTravel .travelBlock {
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 70%;
-  margin-left: 15%;
+    /* width: 70%; */
+    /* margin-left: 15%; */
+    transition: 0.3s ease-in-out;
+    
+
+   
+}
+
+.destinationForTravel .travelBlock:hover {
+    transform: scale(1.02);
 }
 
 .destinationForTravel .imgTravel {
@@ -18,12 +35,18 @@ border-radius: 25px;
 border: solid 3px black; */
 overflow: hidden;
 /* tout en 30 */
+justify-items: center;
+/* display: grid;
+grid-template-columns: 1fr 1fr; */
+/* display: flex;  */
+
 
 }
 
 .destinationForTravel h1, .titleTravel, .taglineTravel, .lethalTravel, .journeyTravel, .descriptionTravel {
     text-align: center;
     margin-bottom: 10px;
+    
 }
 
 .destinationForTravel .titleTravel {

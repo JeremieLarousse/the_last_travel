@@ -1,7 +1,5 @@
 import React from 'react';
-import image11 from "../assets/blessure-femme.jpg";
-import image12 from "../assets/blessure_homme.jpg";
-import image13 from "../assets/urne.jpg";
+
 import Lottie from 'react-lottie';
 import animationData from '../assets/lottie/LigneDeVie.json';
 

@@ -11,7 +11,6 @@ import Destinations from './pages/Destinations';
 import Agency from './pages/Agency';
 import Contact from './pages/Contact';
 
-
 function App() {
 
   return (
@@ -23,7 +22,6 @@ function App() {
         <Route path="/agence-tous-risques" element={<Agency />} />
         <Route path="/nous-contacter-vraiment" element={<Contact />} />
       </Routes>
-
     </div>
   );
 

@@ -1,7 +1,9 @@
 import React from 'react';
 // import destinations from "../../data";
 
-const DestinationsBlock = ({info}) =>  {
+const DestinationsBlock = ({info, clickMe}) =>  {
+
+    
     return (
 
         <div>
@@ -17,12 +19,12 @@ const DestinationsBlock = ({info}) =>  {
             </p>
 
             <p className='lethalTravel'>
-                Niveau de léthalité de votre destination:
+                Léthalité:
             {info.lethal}
             </p>
 
             <p className='journeyTravel'>
-                Date du départ de votre voyage de rêve: 
+                Date du départ: 
             {info.journey_date}
             </p>
 
@@ -33,6 +35,9 @@ const DestinationsBlock = ({info}) =>  {
             </p>
     
             </div>
+
+            <button type='button' onClick={()=>clickMe()}>Réservation</button>
+
         </div>
     );
 };
