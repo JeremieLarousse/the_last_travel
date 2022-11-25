@@ -1,11 +1,10 @@
 import React from 'react';
-
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer';
 import "../style/Destination.css";
 import DestinationsTitle from '../components/Destinations/DestinationsTitle';
 import DestinationsBlock from '../components/Destinations/DestinationsBlock';
-import destinations from "../data";
+import { destinations } from "../data";
 import Reservation from '../components/Reservation';
 // import { defaultMethod } from 'react-router-dom/dist/dom';
 
@@ -36,7 +35,6 @@ const Destinations = () => {
                             info={info}
                             clickMe={clickMe}
                         />
-                        <Reservation />
                     </div>
 
                 ))}

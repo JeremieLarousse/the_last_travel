@@ -1,0 +1,84 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(113, 71, 211, 0.2);
+}
+
+.popin {
+    background-color: var(--background-color);
+    margin: 5% auto auto auto;
+    width: 35%;
+    border-radius: 20px;
+    box-shadow: var(--shadow-card);
+    border: solid 5px var(--secondary-color-2);
+    overflow: hidden;
+}
+
+
+.imgContainer {
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100px
+}
+
+.imgCard {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.info {}
+
+.firstForm {
+    all: unset;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    flex-direction: column;
+    width: 90%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.firstForm input {
+
+    width: 10em;
+
+    /* border: solid 3px black; */
+    margin: 0.3em;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.firstForm input:active,
+.firstForm input:hover {
+    border: 2px solid var(--secondary-color-1)
+}
+
+
+.firstForm select {
+    margin: 0.3em;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.firstForm textarea {
+    margin: 0.1em;
+    resize: none;
+}
+
+#id {
+    /* width: 15em; */
+}
