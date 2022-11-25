@@ -5,6 +5,8 @@ import "../style/Destination.css";
 import DestinationsBlock from '../components/DestinationsBlock';
 import { destinations } from "../data";
 
+import Reservation from '../components/Reservation';
+
 const Destinations = () => {
 
     const [booking, setBooking] = React.useState(false);
