@@ -28,7 +28,7 @@ const Testimony = () => {
                 <div className="Testimonial1">
 
 
-                    <img src={"/assets/blessure_femme.jpg"} alt="hurt1" className="hurt1" />
+                    <img src={"/assets/blessure-femme.jpg"} alt="hurt1" className="hurt1" />
 
 
                     <p>"Des moments intenses, peut-être trop ?, mais inoubliables.<br /> Je recommande surtout la porte de l'enfer, ils sont bouillants là-bas.<br /> Merci Last Travel"<br /><h3>Jessica Stoalebra.</h3></p>
