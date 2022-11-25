@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Lottie from 'react-lottie';
-import animationData from '../assets/lottie/heart-beat.json';
+import animationData from '../lottie/heart-beat.json';
 
 const PopIn = ({ open, onClose }) => {
     if (!open) return null;
