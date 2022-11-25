@@ -6,10 +6,10 @@ const destinations = [
         tagline: "L’odeur âcre de la combustion de soufre ne vous laissera pas indifférent...",
         lethal: "🍗🚪⚫🔥💀",
         journey_date: "Le jour de la mort d'Elvis Presley",
-        description: [
-            "Pour notre série offre d’hiver, La Porte de l'Enfer est un champ de gaz naturel situé à Derweze (également orthographié Darvaza, ce qui signifie « porte »), dans la province d'Ahal au Turkménistan.",
-            "Votre guide préféré vous donnera la possibilité d’approcher l’entrée de la porte. Peut-être aurez-vous la chance de contempler l’incendie éternel qui y règne, si toutefois la température insupportable ne vous a pas ôté la vie avant."
-        ]
+        description: {
+            paragraph_1:"Pour notre série offre d’hiver, La Porte de l'Enfer est un champ de gaz naturel situé à Derweze (également orthographié Darvaza, ce qui signifie « porte »), dans la province d'Ahal au Turkménistan.",
+            paragraph_2:"Votre guide préféré vous donnera la possibilité d’approcher l’entrée de la porte. Peut-être aurez-vous la chance de contempler l’incendie éternel qui y règne, si toutefois la température insupportable ne vous a pas ôté la vie avant."
+        }
     },
     {
         id: 2,

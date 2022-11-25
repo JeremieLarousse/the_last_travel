@@ -1,0 +1,46 @@
+.ghost {
+    position: absolute;
+    z-index: -1;
+    left: 20rem;
+    right: 0rem;
+    top: 10rem;
+}
+
+.ghost img {
+    width: 5%;
+    animation: fadeInFromTop .5s linear forwards, floating ease 15s infinite;
+}
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+
+    25% {
+        transform: translate(5%, 15%) rotate(360deg);
+    }
+
+    50% {
+        transform: translate(1800%, 500%) rotate(360deg);
+    }
+
+    75% {
+        transform: translate(1550%, -200%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+}

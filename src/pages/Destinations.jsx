@@ -24,7 +24,15 @@ const Destinations = () => {
                 <DestinationsTitle />
             </div>
 
-            <div className='destinationForTravel'>
+
+                <div className='titleDestination'>
+                  <DestinationsTitle />
+                  {/* <h1 className='titlePage'>Destinations Finales</h1> */}
+              </div>
+      
+          <div className='destinationForTravel'>
+              
+
 
 
                 {destinations.map((info) => (

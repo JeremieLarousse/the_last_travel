@@ -6,7 +6,6 @@ import "../style/Footer.css"
 const Footer = () => {
     return (
         <div className='footerSection'>
-            <div className='ghost'><img src={'/assets/the-last-travel-icon-ghost.svg'} alt="Ghost Illustration" /></div>
             <div className='footerBlock'>
                 <div className='iconForward'>
                     <div className='tombstone'><img src={'/assets/the-last-travel-icon-tombstone.svg'} alt="Tombstone Illustration" /></div>

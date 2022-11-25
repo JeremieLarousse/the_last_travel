@@ -1,8 +1,10 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../lottie/heart-beat.json';
 
-const PopIn = ({ open, onClose }) => {
+import animationData from '../components/assets/lottie/heart-beat.json';
+
+
+const PopIn = ({ open, onClosed }) => {
     if (!open) return null;
 
     const defaultOptions = {
@@ -17,12 +19,12 @@ const PopIn = ({ open, onClose }) => {
     };
 
     return (
-        <div onClick={onClose} className="overlay">
+        <div onClick={onClosed} className="overlay">
             <div onClick={(e) => {
                 e.stopPropagation()
             }} className="modalContainer">
                 <img src="https://images.unsplash.com/photo-1448772917253-74bbbe249b30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Hell Hole in Turkmenistan" />
-                <p onClick={onClose} className="closeBtn">X</p>
+                <p onClick={onClosed} className="closeBtn">X</p>
                 <div className="modalRight">
                     <div className="content">
                         <h3>Merci pour l'étrange confiance que vous nous accordez !</h3>
@@ -45,7 +47,6 @@ const PopIn = ({ open, onClose }) => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

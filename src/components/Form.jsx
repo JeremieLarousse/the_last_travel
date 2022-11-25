@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import style from '../style/Contact.css';
+import '../style/Contact.css';
 import PopIn from '../components/PopIn';
 
 const Form = () => {
@@ -49,7 +49,7 @@ const Form = () => {
             </div>
             <PopIn 
                 open={openPop} 
-                onClose={() => {
+                onClosed={() => {
                     setOpenPop(false);
                     setName("");
                     setEmail("");
