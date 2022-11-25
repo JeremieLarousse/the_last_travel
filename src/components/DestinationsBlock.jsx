@@ -1,6 +1,4 @@
 import React from 'react';
-// import destinations from "../../data";
-
 const DestinationsBlock = ({ info, clickMe }) => {
 
 
@@ -33,7 +31,7 @@ const DestinationsBlock = ({ info, clickMe }) => {
                     {info.description.paragraph_3}
                 </p>
 
-                <button type='button' className='buttonDestination' onClick={() => clickMe()}>Réserver</button>
+                <button type='button' className='buttonDestination' onClick={() => clickMe(info)}>Réserver</button>
             </div>
         </div>
     );

@@ -4,19 +4,19 @@ import Footer from '../components/Footer';
 import "../style/Destination.css";
 import DestinationsBlock from '../components/DestinationsBlock';
 import { destinations } from "../data";
-
 import Reservation from '../components/Reservation';
 
 const Destinations = () => {
 
     const [booking, setBooking] = React.useState(false);
-
-    const clickMe = () => {
+    const [infor, setInfor] = React.useState();
+    const clickMe = (info) => {
         setBooking(!booking);
+        setInfor(info)
     }
 
     return (
-        <div>
+        <div className='ci'>
             <Header />
             <div className='destinationsContainer'>
                 <h1>Nos Destinations</h1>
@@ -29,8 +29,15 @@ const Destinations = () => {
                                 clickMe={clickMe}
                             />
                         </div>
-
                     ))}
+                    {infor &&
+                        <Reservation
+                            info={infor}
+                            clickMe={clickMe}
+                            booking={booking}
+
+                        />
+                    }
                 </div>
             </div>
             <Footer />
