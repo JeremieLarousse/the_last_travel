@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import "../../style/Header.css";
-import logo from "../../assets/the-last-travel-logo.svg";
 import CoffinCart from './CoffinCart';
 
 
@@ -16,7 +15,7 @@ const Header = () => {
     return (
         <div>
             <div className='navbar'>
-                <NavLink to="/"><div className='logo'><img src={logo} alt="The Last Travel Logo" /></div></NavLink>
+                <NavLink to="/"><div className='logo'><img src={'/assets/the-last-travel-logo.svg'} alt="The Last Travel Logo" /></div></NavLink>
                 <nav>
                     <ul className='tabs'>
                         <li>
