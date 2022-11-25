@@ -1,0 +1,151 @@
+.formulaire {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    background-color: #ffffff;
+    margin-top: 20vh;
+    margin-inline: 10vw;
+    border-radius: 12px;
+    height: 35rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.left-part {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-left: 2vw;
+}
+
+.form {
+    width: 100%;
+    all: inset;
+}
+
+.form label {
+    font-family: var(--font-text-family);
+    text-align: center;
+}
+
+.form input {
+    padding-block: 6px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: rgba(254, 174, 40, 0.2);
+}
+
+.form input:focus {
+    border: 1px solid var();
+}
+
+.form button {
+    margin-inline: 60px;
+    padding-block: 12px;
+}
+
+.contact {
+    background-color: #F6F2FF;
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.formulaire textarea {
+    font-size: 24px;
+    background-color: rgba(254, 174, 40, 0.2);
+    border: 1px solid black;
+    resize: none;
+    height: 20vh;
+    border-radius: 6px;
+}
+
+.right-part {
+    grid-area: 1 / 2 / 2 / 4;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.right-part img {
+    object-fit: contain;
+    height: 100%;
+}
+
+/* Pop-In part */
+
+.overlay {
+    animation: fade-in 1s;
+    position: absolute;
+    top: 25vh;
+    left: 30%;
+    width: 35vw;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        top: 35vh;
+    }
+
+    to {
+        opacity: 1;
+        top: 25vh;
+    }
+}
+
+.modalContainer {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F2FF;
+    /* height: 68vh; */
+    height: 500px;
+    overflow: hidden;
+}
+
+.modalContainer p {
+    transition: transform 0.4s;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 1rem;
+    margin-left: 90%;
+    font-weight: bold;
+    font-size: 32px;
+    justify-content: flex-start;
+}
+
+
+.modalContainer p:hover {
+    transform: scale(1.7);
+    cursor: pointer;
+}
+
+.modalContainer img {
+    height: 30vh;
+    width: 35vw;
+    object-fit: cover;
+}
+
+.modalRight {
+    text-align: center;
+    margin-inline: 4%;
+}
+
+.content {
+    margin-top: 1.5rem;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 12px;
+}

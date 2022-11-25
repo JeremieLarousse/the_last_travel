@@ -1,0 +1,116 @@
+:root {
+    --background-color: #F6F2FF;
+    --accent-color: #F9AE28;
+    --font-color: #363238;
+    --secondary-color-1: #E49200;
+    --secondary-color-2: #7147D3;
+    --secondary-color-3: #3B3581;
+    --shadow-card: 4px 4px 20px rgba(113, 71, 211, 0.2);
+    --font-title-family: 'Merriweather', serif;
+    --font-text-family: 'Noto Sans', sans-serif;
+    --font-text-weight-bold: 700;
+    --font-text-weight-regular: 400;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+
+body {
+    background-color: var(--background-color);
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title-family);
+    color: var(--font-color);
+}
+
+h1 span,
+h2 span,
+h3 span {
+    color: var(--accent-color);
+}
+
+
+h1 {
+    font-size: 5rem;
+    line-height: 6.125rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.625rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 2.375rem;
+}
+
+h3 .quote {
+    color: var(--secondary-color-2);
+}
+
+p,
+li {
+    font-family: var(--font-text-family);
+    font-weight: var(--font-text-weight-regular);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--font-color);
+}
+
+p span {
+    font-weight: var(--font-text-weight-bold);
+}
+
+button {
+    font-family: var(--font-text-family);
+    font-weight: var(--font-text-weight-bold);
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0.875rem 1.25rem;
+    border-radius: 0.625rem;
+    background-color: var(--accent-color);
+}
+
+button:hover,
+button:active {
+    background-color: var(--secondary-color-1);
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3.625rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
+
+.test {
+    height: 500px;
+    background-color: var(--background-color);
+}

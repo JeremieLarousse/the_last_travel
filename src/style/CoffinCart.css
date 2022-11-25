@@ -1,0 +1,19 @@
+.coffinCartSection {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+}
+
+.coffinCartCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    top: 5rem;
+    padding: 1.875rem;
+    box-shadow: var(--shadow-card);
+    border-radius: 0px 0px 30px 30px;
+    gap: 2rem;
+    text-align: center;
+}

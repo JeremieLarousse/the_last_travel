@@ -1,0 +1,96 @@
+.footerSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding-top: 10rem;
+
+}
+
+.cimetery {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+
+.footerBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: -8rem;
+    z-index: 20;
+}
+
+.footerContent {
+    background-color: var(--secondary-color-3);
+    width: 100%;
+    padding-bottom: 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.footerContent ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.footerContent a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    color: var(--secondary-color-2);
+}
+
+.infoSuicide {
+    color: white;
+    text-align: center;
+}
+
+.footerContent p span {
+    color: var(--accent-color)
+}
+
+.footerContent li a {
+    text-decoration: none;
+    color: var(--secondary-color-2);
+    font-weight: var(--font-text-weight-bold);
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.footerContent li a:hover {
+    border-bottom: 2px solid var(--secondary-color-2);
+}
+
+.iconForward {
+    display: flex;
+    align-items: center;
+    gap: 38rem;
+}
+
+.ghost {
+    position: relative;
+    z-index: 30;
+}
+
+.ghost img {
+    width: 5%;
+}

@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: var(--shadow-card);
+    height: 5rem;
+    padding: 0rem 6.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+.tabs li {
+    padding: 6px 0;
+    list-style-type: none;
+}
+
+.tabs li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: var(--font-text-weight-bold);
+    padding-bottom: 26px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.tabs li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: var(--accent-color);
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.tabs li a:hover {
+    color: var(--accent-color);
+}
+
+.tabs li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.tabs li a:focus {
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.tabs svg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tabs svg:hover path,
+.tabs svg:active path {
+    fill: var(--accent-color);
+}
+
+.logo img {
+    width: 70%;
+}
