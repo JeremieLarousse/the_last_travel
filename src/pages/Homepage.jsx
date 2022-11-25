@@ -11,8 +11,10 @@ const Homepage = () => {
 
         <div>
             <Header />
-            <h2 className="Titl">Le voyage d'où vous ne reviendrez pas</h2>
-            <Carousel className='carousel'>
+            <div className='homepageContainer'>
+                <h1>Le voyage d'où vous <br />ne reviendrez <span>pas</span>.</h1>
+            </div>
+            <Carousel>
                 <img src={'/assets/the-last-travel-image-agbogloshie.jpg'} alt="test1" className="img1" />
                 <img src={'/assets/the-last-travel-image-aokigahara.jpg'} alt="test2" className="img2" />
                 <img src={'/assets/the-last-travel-image-dzerzhinsk.jpg'} alt="test3" className="img3" />
@@ -24,9 +26,7 @@ const Homepage = () => {
                 <img src={'/assets/the-last-travel-image-san-pedro-sula.jpg'} alt="test9" className="img9" />
                 <img src={'/assets/the-last-travel-image-triangle-des-bermudes.jpg'} alt="test10" className="img10" />
             </Carousel>
-            <div>
-                <Testimony />
-            </div>
+            <Testimony />
             <Footer />
         </div>
     );
