@@ -33,10 +33,12 @@ const DestinationsBlock = ({info, clickMe}) =>  {
             {info.description.paragraph_2}
             {info.description.paragraph_3}
             </p>
+
+            <button type='button' className='buttonDestination' onClick={()=>clickMe()}>Réservation</button>
     
             </div>
 
-            <button type='button' onClick={()=>clickMe()}>Réservation</button>
+            
 
         </div>
     );

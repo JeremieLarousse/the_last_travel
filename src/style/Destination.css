@@ -2,56 +2,50 @@ body {
     background-color: var(--background-color);
 }
 
-.titleDestination {
-    margin-top: 50px;
+.titlePage {
+    /* margin-top: 150px; */
 }
 
 .destinationForTravel {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     width: 100%;
+    column-gap: 50px;
+    row-gap: 15px;
+    padding: 0rem 10rem;
 }
 
 .destinationForTravel .travelBlock {
     margin-top: 100px;
     margin-bottom: 100px;
-    /* width: 70%; */
-    /* margin-left: 15%; */
-    transition: 0.3s ease-in-out;
-    
-
-   
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: var(--shadow-card);
+    transition: 0.7s ease-in-out;
+    padding: 1rem;
 }
 
 .destinationForTravel .travelBlock:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 
 .destinationForTravel .imgTravel {
-/* display: block;
+display: block;
 margin-left: auto;
 margin-right: auto;
-border-radius: 25px;
-border: solid 3px black; */
+border-radius: 20px;
+width: 100%;
 overflow: hidden;
-/* tout en 30 */
 justify-items: center;
-/* display: grid;
-grid-template-columns: 1fr 1fr; */
-/* display: flex;  */
-
-
+padding-bottom: 1rem;
 }
 
 .destinationForTravel h1, .titleTravel, .taglineTravel, .lethalTravel, .journeyTravel, .descriptionTravel {
     text-align: center;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;  
 }
 
-.destinationForTravel .titleTravel {
-    text-decoration: underline;
-}
+
 
 .destinationForTravel .taglineTravel {
     font-style: italic;
@@ -61,4 +55,9 @@ grid-template-columns: 1fr 1fr; */
     color: var(--secondary-color-1);
 }
 
+
+.destinationForTravel .buttonDestination {
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
 
