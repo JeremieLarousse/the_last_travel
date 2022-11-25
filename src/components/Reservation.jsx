@@ -1,27 +1,29 @@
 import React from 'react';
 import "../style/reservation.css";
-import { destination } from "../data"
+import { destinations } from "../data"
 
 
-const Reservation = () => {
-    console.log(destination[0].name)
-    console.log(destination[0].image)
-    console.log(destination[0].description)
+const Reservation = ({ info, clickMe, booking }) => {
+
+    console.log(info.name)
+    console.log(info.image)
+    console.log(info.description)
+    const [more, setMore] = React.useState(false)
+    const handleMore = () => setMore(!more)
     return (
         <div className='background'>
             <div className='popin'>
                 <div className='imgContainer'>
-                    <img src={destination[0].image} className="imgCard" />
+                    <img src={info.image} className="imgCard" />
                 </div>
                 <div className='info'>
-                    <h3>{destination[0].name}</h3>
-                    <p>{destination[0].lethal}</p>
+                    <h3>{info.name}</h3>
+                    <p>{info.lethal}</p>
 
                     <form className='firstForm'>
                         <div className='name'>
                             <input type="text" name="fristname" placeholder='John' />
                             <input type="text" name='lastname' placeholder='Smith' />
-
                         </div>
                         <input type="date" name="birthday" placeholder='17/06/1986' />
                         <input type="number" name="weight" placeholder='86kg' />
@@ -68,24 +70,23 @@ const Reservation = () => {
 
                         </select>
                         <label htmlFor="more">More option
-                            <input type="checkbox" name="more" id="more" placeholder='test' />
+                            <input type="checkbox" name="more" id="more" placeholder='test' onChange={handleMore} />
                         </label>
-
-
-                        {/* {state &&  */}
-                        <select name="wood" id="">
-                            <option value="">essence de bois</option>
-                            <option value="">acajou</option>
-                            <option value="">chêne</option>
-                            <option value="">ébène</option>
-                            <option value="">érable</option>
-                            <option value="">pin</option>
-                        </select>
-                        <textarea name='épitaphe' placeholder='Laissez tomber les fleurs. Apportez-moi plutôt une bière' />
-                        {/* } */}
-
+                        {more &&
+                            <div>
+                                <select name="wood" id="">
+                                    <option value="">essence de bois</option>
+                                    <option value="">acajou</option>
+                                    <option value="">chêne</option>
+                                    <option value="">ébène</option>
+                                    <option value="">érable</option>
+                                    <option value="">pin</option>
+                                </select>
+                                <textarea name='épitaphe' placeholder='Laissez tomber les fleurs. Apportez-moi plutôt une bière' />
+                            </div>}
                     </form>
-
+                    <button type='button' onClick={() => clickMe()}>Annuler</button>
+                    <button type='button'>Réserver</button>
                 </div>
             </div>
         </div>

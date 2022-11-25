@@ -1,4 +1,5 @@
 .background {
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: rgba(113, 71, 211, 0.2);
