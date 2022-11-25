@@ -15,23 +15,22 @@ const DestinationsBlock = ({ info, clickMe }) => {
                     {info.tagline}
                 </p>
 
-                <p className='lethalTravel'>
-                    Léthalité:
+                <h2 className='lethalTravel'>
                     {info.lethal}
-                </p>
-
-                <p className='journeyTravel'>
-                    Date du départ:
-                    {info.journey_date}
-                </p>
-
-                <p className='descriptionTravel'>
-                    {info.description.paragraph_1}
-                    {info.description.paragraph_2}
-                    {info.description.paragraph_3}
-                </p>
-
+                </h2>
+                <div className='journeyContent'>
+                    <p>
+                        <span>Date du départ : </span>
+                        {info.journey_date}
+                    </p>
+                    <p>
+                        {info.description.paragraph_1}
+                        {info.description.paragraph_2}
+                        {info.description.paragraph_3}
+                    </p>
+                </div>
                 <button type='button' className='buttonDestination' onClick={() => clickMe(info)}>Réserver</button>
+
             </div>
         </div>
     );

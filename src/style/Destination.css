@@ -24,7 +24,7 @@ body {
 
 }
 
-.destinationForTravel .travelBlock {
+.travelBlock {
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: white;
@@ -32,7 +32,7 @@ body {
     box-shadow: var(--shadow-card);
     transition: 0.7s ease-in-out;
     padding: 1rem;
-    height: 840px;
+    height: 880px;
 
 }
 
@@ -61,7 +61,10 @@ body {
     margin-bottom: 10px;
 }
 
-
+.taglineTravel {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
 
 .destinationForTravel .taglineTravel {
     font-style: italic;
@@ -73,6 +76,21 @@ body {
 
 
 .destinationForTravel .buttonDestination {
-    margin-left: 40%;
-    margin-bottom: 20px;
+    /* margin-left: 40%;
+    margin-bottom: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.journeyContent {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+    padding: 1rem;
 }
