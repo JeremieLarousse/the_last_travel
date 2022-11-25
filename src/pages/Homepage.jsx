@@ -11,6 +11,7 @@ const Homepage = () => {
 
         <div>
             <Header />
+            <h2 className="Titl">Le voyage d'où vous ne reviendrez pas</h2>
             <Carousel className='carousel'>
                 <img src={'/assets/the-last-travel-image-agbogloshie.jpg'} alt="test1" className="img1" />
                 <img src={'/assets/the-last-travel-image-aokigahara.jpg'} alt="test2" className="img2" />

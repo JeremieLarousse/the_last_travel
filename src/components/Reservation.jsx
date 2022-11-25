@@ -1,6 +1,6 @@
 import React from 'react';
 import "../style/reservation.css";
-import destination from "../data"
+import { destination } from "../data"
 
 
 const Reservation = () => {

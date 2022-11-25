@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Lottie from 'react-lottie';
 import animationData from '../lottie/heart-beat.json';
 
@@ -9,9 +8,11 @@ const PopIn = ({ open, onClose }) => {
     const defaultOptions = {
         loop: true,
         autoplay: true,
+
         animationData: animationData,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
+
         }
     };
 
@@ -31,13 +32,13 @@ const PopIn = ({ open, onClose }) => {
                         {/* <button className="btnPrimary">
                             <span className="bold">OUI</span>
                         </button> */}
-
                         <Lottie
+
+
                             options={defaultOptions}
                             height={180}
                             width={180}
                         />
-
                         {/* <button className="btnOutline">
                             <span className="bold">NON</span>
                         </button> */}

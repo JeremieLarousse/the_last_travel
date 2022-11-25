@@ -128,7 +128,7 @@ const characters = [
     {
         id: 1,
         name: "Leviathan Z. Alcott",
-        image: "",
+        image: "/assets/the-last-travel-image-agent-1.jpeg",
         age: 239,
         sign: "Je me balade toujours avec ma maison sur le dos.",
         beliefs: "Croit en la force des points de suspensions...",
@@ -138,7 +138,7 @@ const characters = [
     {
         id: 2,
         name: "Sheridan Colt",
-        image: "",
+        image: "/assets/the-last-travel-image-agent-2.jpeg",
         age: 5,
         sign: "Bah oui !",
         beliefs: "Jediisme ou le code spirituel des jedis.",
@@ -148,7 +148,7 @@ const characters = [
     {
         id: 3,
         name: "Draven McDaniel",
-        image: "",
+        image: "/assets/the-last-travel-image-agent-3.jpeg",
         age: 542,
         sign: "Je ne jure que par le pâté fait maison.",
         beliefs: "Dudéisme (ne veut pas trop bosser, préfère boire et dormir quand il veut).",
@@ -158,6 +158,7 @@ const characters = [
     {
         id: 4,
         name: "Eleanore Lilith Graeme",
+        image: "/assets/the-last-travel-image-agent-4.jpeg",
         age: 666,
         sign: "J’aime particulièrement les licornes.",
         beliefs: "Pastafarisme ou la croyance en le Monstre Spaghetti Volant.",
@@ -167,6 +168,7 @@ const characters = [
     {
         id: 5,
         name: "Jezebel I. Zane",
+        image: "/assets/the-last-travel-image-agent-5.jpeg",
         age: 126,
         sign: "J’ai une sainte horreur des bâtiments penchés. ",
         beliefs: "Pixel Perfect.",
@@ -175,4 +177,4 @@ const characters = [
     }
 ];
 
-module.exports = destinations;
+export { destinations, characters };
