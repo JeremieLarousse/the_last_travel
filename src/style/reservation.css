@@ -28,7 +28,7 @@
     height: 100%;
 }
 
-.info {}
+
 
 .firstForm {
     all: unset;
@@ -77,8 +77,4 @@
 .firstForm textarea {
     margin: 0.1em;
     resize: none;
-}
-
-#id {
-    /* width: 15em; */
 }

@@ -1,13 +1,29 @@
 import React from 'react';
 
 
+import Lottie from 'react-lottie';
+import animationData from '../lottie/LigneDeVie.json';
+
+
 const Testimony = () => {
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
 
     return (
 
         <div>
 
             <div className="Testimonial">
+
+
+
 
                 <div className="Testimonial1">
 
@@ -21,17 +37,35 @@ const Testimony = () => {
 
 
                 </div>
+                <div>
+                    <Lottie
+                        options={defaultOptions}
+                        height={180}
+                        width={180}
+                    />
+                </div>
 
                 <div className='Testimonial2'>
 
 
-                    <img src={"/assets/blessure_homme.jpg"} alt="hurt2" className="hurt2" />
+
+
+                    <img src={'/assets/blessure_homme.jpg'} alt="hurt2" className="hurt2" />
 
 
                     <p>"Une expérience hors du commun, c'est rien de le dire !, à refaire malgré la chance d'être revenue entier, ou presque.<br /> Je vous recommande particulièrement le lac Natron qui ne vous laissera pas de marbre. <br />Vive Last Travel !"<br /><h3>Sacha Touilles</h3></p>
 
 
 
+                </div>
+
+
+                <div>
+                    <Lottie
+                        options={defaultOptions}
+                        height={180}
+                        width={180}
+                    />
                 </div>
 
                 <div className="Testimonial3">
