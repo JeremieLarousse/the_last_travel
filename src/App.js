@@ -1,17 +1,22 @@
 
 import React from "react";
+
+
+
+
 import './style/App.css';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Destinations from './pages/Destinations';
 import Agency from './pages/Agency';
 import Contact from './pages/Contact';
+import Ghost from "./components/Ghost";
 
 function App() {
 
   return (
-
     <div className="App">
+      <Ghost />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/destinations-finales" element={<Destinations />} />

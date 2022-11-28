@@ -2,55 +2,44 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer';
 import "../style/Destination.css";
-import DestinationsTitle from '../components/Destinations/DestinationsTitle';
-import DestinationsBlock from '../components/Destinations/DestinationsBlock';
+import DestinationsBlock from '../components/DestinationsBlock';
 import { destinations } from "../data";
 import Reservation from '../components/Reservation';
-// import { defaultMethod } from 'react-router-dom/dist/dom';
 
 const Destinations = () => {
 
     const [booking, setBooking] = React.useState(false);
-
-    const clickMe = () => {
+    const [infor, setInfor] = React.useState();
+    const clickMe = (info) => {
         setBooking(!booking);
+        setInfor(info)
     }
 
-
     return (
-        <div>
+        <div className='ci'>
             <Header />
-
-            <div className='titleDestination'>
-                <DestinationsTitle />
-            </div>
-
-
-                <div className='titleDestination'>
-                  <DestinationsTitle />
-                  {/* <h1 className='titlePage'>Destinations Finales</h1> */}
-              </div>
-      
-          <div className='destinationForTravel'>
-              
-
-
-
-                {destinations.map((info) => (
-                    <div>
-                        <DestinationsBlock
-                            key={info.id}
-                            info={info}
+            <div className='destinationsContainer'>
+                <h1>Nos Destinations</h1>
+                <div className='destinationForTravel'>
+                    {destinations.map((info) => (
+                        <div>
+                            <DestinationsBlock
+                                key={info.id}
+                                info={info}
+                                clickMe={clickMe}
+                            />
+                        </div>
+                    ))}
+                    {infor &&
+                        <Reservation
+                            info={infor}
                             clickMe={clickMe}
+                            booking={booking}
+
                         />
-                    </div>
-
-                ))}
-
-
-
+                    }
+                </div>
             </div>
-
             <Footer />
         </div>
     );

@@ -30,6 +30,7 @@
     position: absolute;
     bottom: -8rem;
     z-index: 20;
+
 }
 
 .footerContent {
@@ -40,7 +41,6 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-
 }
 
 .footerContent ul {
@@ -84,13 +84,4 @@
     display: flex;
     align-items: center;
     gap: 38rem;
-}
-
-.ghost {
-    position: relative;
-    z-index: 30;
-}
-
-.ghost img {
-    width: 5%;
 }
